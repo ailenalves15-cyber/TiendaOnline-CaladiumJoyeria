@@ -1350,3 +1350,25 @@ footer button {
     object-fit: contain;
   }
 }
+
+@media screen and (max-width: 760px) {
+  .story .story-decoration {
+    width: 100%;
+    height: 140px !important;
+    min-height: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden;
+  }
+
+  .story .story-decoration img {
+    display: block !important;
+    width: 100px !important;
+    max-width: 100px !important;
+    height: 100px !important;
+    max-height: 100px !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+}
