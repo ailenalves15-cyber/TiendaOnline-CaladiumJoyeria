@@ -20,7 +20,7 @@
   <header class="header">
 
     <a href="#inicio" class="logo">
-      <img src="assets/logo-caladium.png" alt="Caladium Joyería Botánica">
+      <img src="recursos/logo-caladium.png" alt="Caladium Joyería Botánica">
     </a>
 
     <button class="menu-toggle" id="menuToggle" type="button"
@@ -243,7 +243,7 @@
       </div>
 
       <div class="story-decoration">
-        <img src="assets/logo-caladium.png" alt="Caladium Joyería Botánica">
+        <img src="recursos/logo-caladium.png" alt="Caladium Joyería Botánica">
       </div>
 
     </section>
@@ -347,19 +347,31 @@
 
       <button class="close-modal" id="closeAdmin" type="button" aria-label="Cerrar">×</button>
 
-      <div id="adminLogin">
+     <div id="adminLogin">
 
-        <small>ACCESO PRIVADO</small>
+  <small>ACCESO PRIVADO</small>
 
-        <h2>Administración</h2>
+  <h2>Administración</h2>
 
-        <input id="adminPin" type="password" placeholder="PIN de acceso">
+  <input
+    id="adminEmail"
+    type="email"
+    placeholder="Correo electrónico"
+    autocomplete="username"
+  >
 
-        <button id="loginButton" type="button">Ingresar</button>
+  <input
+    id="adminPassword"
+    type="password"
+    placeholder="Contraseña"
+    autocomplete="current-password"
+  >
 
-        <p id="loginMessage"></p>
+  <button id="loginButton" type="button">Ingresar</button>
 
-      </div>
+  <p id="loginMessage"></p>
+
+</div>
 
       <div id="adminPanel" hidden>
 
@@ -387,9 +399,14 @@
             </label>
 
             <label>
-              URL de la fotografía
-              <input id="flowerImage" type="url" placeholder="https://...">
-            </label>
+  Fotografía de la flor
+  <input
+    id="flowerImage"
+    type="file"
+    accept="image/jpeg,image/png,image/webp"
+  >
+  <small id="flowerImageName">Ninguna fotografía seleccionada</small>
+</label>
 
             <label>
               Descripción
@@ -446,9 +463,14 @@
             </label>
 
             <label>
-              URL de la fotografía
-              <input id="productImage" type="url">
-            </label>
+  Fotografía del producto
+  <input
+    id="productImage"
+    type="file"
+    accept="image/jpeg,image/png,image/webp"
+  >
+  <small id="productImageName">Ninguna fotografía seleccionada</small>
+</label>
 
             <label>
               Descripción
@@ -481,7 +503,7 @@
 
   <div id="toast" role="status" aria-live="polite"></div>
 
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 
 </body>
 </html>
