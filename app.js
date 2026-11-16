@@ -45,10 +45,10 @@ const CLOUDINARY_URL =
 /* DATOS INICIALES */
 
 const images = {
-  Collares: "recursos/referencia.png",
-  Aros: "recursos/referencia.png",
-  Pulseras: "recursos/referencia.png",
-  Anillos: "recursos/referencia.png"
+  Collares: "assets/referencia.png",
+  Aros: "assets/referencia.png",
+  Pulseras: "assets/referencia.png",
+  Anillos: "assets/referencia.png"
 };
 
 const defaultProducts = [
